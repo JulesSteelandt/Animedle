@@ -14,7 +14,6 @@ module.exports = {
       'warn',
       { allowConstantExport: true },
     ],
-    "rules": {
       "linebreak-style": ["error", "windows"],
       "quotes": ["error", "single"],
       "semi": ["error", "always"],
@@ -80,6 +79,5 @@ module.exports = {
       "no-whitespace-before-property": "error",
       "switch-colon-spacing": "error",
       "no-case-declarations": "off",
-    }
-  },
+    },
 }
