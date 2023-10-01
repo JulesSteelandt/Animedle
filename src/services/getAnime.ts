@@ -1,10 +1,11 @@
-import {ANIME, API, MANGA, TOP} from '../config/constant';
-
+import {ANIME, API, TOP} from '../config/constant';
+import axios from 'axios';
 // 43608
 export const getTopAnime = () => {
-  return fetch(API + TOP + ANIME)
+  return axios
+    .get(API + TOP + ANIME)
     .then((response) => {
-      return response.json();
+      return response.data;
     })
     .catch((error) => {
       console.log(error);
@@ -16,8 +17,7 @@ export const getAnimeId = () => {
 };
 
 export const getAnime = (id) => {
-  return axios
-    .get(API + ANIME + id)
+  return fetch(API + ANIME + id)
     .then((response) => {
       return response.data();
     })
