@@ -1,5 +1,4 @@
-export const API = 'https://api.jikan.moe/v4';
+export const API: string = 'http://localhost:5500';
 // 43608
-export const ANIME = '/anime';
-export const MANGA = '/manga';
-export const TOP = '/top';
+export const ANIME: string = '/anime';
+export const MANGA: string = '/manga';
