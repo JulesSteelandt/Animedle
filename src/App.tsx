@@ -1,16 +1,19 @@
-import {getRandomAnimeId, getTopAnime} from './services/getAnime';
-import {useEffect} from 'react';
+
 
 function App() {
-  useEffect(() => {
-    // Fonction asynchrone pour effectuer l'appel à l'API
-    getTopAnime().then((res) => {
-      console.log(res.data);
-    }),
-      [];
-  });
+  return <div className={'bg-main h-screen'}>
+    <nav>
 
-  return <p> start </p>;
+    </nav>
+    <section>
+      <div>
+
+      </div>
+      <div>
+        <h1 className={'text-mainText font-Lemon text-8xl'}>Bienvenue sur <b><u>AnimeDle</u></b></h1>
+      </div>
+    </section>
+  </div>;
 }
 
 export default App;

@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: Itim;
+    src: url("/src/assets/fonts/Itim-Regular.ttf");
+}
+
+@font-face {
+    font-family: Lemon;
+    src: url("/src/assets/fonts/Lemon-Regular.ttf");
+}
