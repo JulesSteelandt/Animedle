@@ -1,9 +1,10 @@
 import {createLazyFileRoute} from '@tanstack/react-router';
+import Gamemode from '../Pages/Gamemode.tsx';
 
 export const Route = createLazyFileRoute('/play')({
-  component: About,
+  component: page,
 });
 
-function About() {
-  return <div className='p-2'>Hello from About!</div>;
+function page() {
+  return <Gamemode />;
 }
