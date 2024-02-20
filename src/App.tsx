@@ -1,18 +1,25 @@
 import img_accueil from './assets/images/accueil.png';
-import NavBar from './components/navbar/Navbar.tsx';
 
 function App() {
-  return <div className={'bg-main h-screen overflow-hidden'}>
-    <NavBar/>
-    <section className={'flex'}>
-      <div>
-        <img src={img_accueil} alt={'image de pleins d\'anime'} className={'bg-mainText rounded-r-[1300px]'}/>
-      </div>
-      <div>
-        <h1 className={'text-mainText font-Lemon text-8xl drop-shadow-2xl'}>Bienvenue sur <b><u>AnimeDle</u></b></h1>
-      </div>
-    </section>
-  </div>;
+  return (
+    <div className={'h-screen overflow-hidden bg-main'}>
+      <section className={'flex h-full'}>
+        <div className={'h-2/4 w-2/4'}>
+          <img src={img_accueil} alt={"image de pleins d'anime"} className={'rounded-r-[1300px] bg-mainText '} />
+        </div>
+        <div className={'flex h-3/4 w-full items-center justify-center'}>
+          <h1 className={'font-Lemon text-9xl text-mainText drop-shadow-2xl'}>
+            Bienvenue sur{' '}
+            <p>
+              <b>
+                <u>AnimeDle</u>
+              </b>
+            </p>
+          </h1>
+        </div>
+      </section>
+    </div>
+  );
 }
 
 export default App;
