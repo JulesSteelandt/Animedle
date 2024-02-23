@@ -1,14 +1,12 @@
 import ButtonGamemode from '../components/Button/ButtonGamemode.tsx';
 
-function Gamemode() {
+export default function Gamemode() {
   return (
     <div className={'h-[90vh] bg-main'}>
       <div className={'flex h-[80vh] flex-col items-center justify-center'}>
-        <ButtonGamemode text={'Classic'} />
-        <ButtonGamemode text={'Guess'} />
+        <ButtonGamemode text={'Classic'} link={'ok'} />
+        <ButtonGamemode text={'Guess'} link={'ok'} />
       </div>
     </div>
   );
 }
-
-export default Gamemode;

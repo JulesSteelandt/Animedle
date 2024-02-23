@@ -1,6 +1,6 @@
 import img_accueil from '../assets/images/accueil.png';
 
-function Index() {
+export default function Index() {
   return (
     <div className={'h-[90vh] overflow-hidden bg-main'}>
       <section className={'flex h-full'}>
@@ -21,5 +21,3 @@ function Index() {
     </div>
   );
 }
-
-export default Index;

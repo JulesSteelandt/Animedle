@@ -1,9 +1,10 @@
 import {createLazyFileRoute} from '@tanstack/react-router';
+import Rules from '../Pages/Rules.tsx';
 
 export const Route = createLazyFileRoute('/rules')({
-  component: About,
+  component: page,
 });
 
-function About() {
-  return <div className='p-2'>Hello from About!</div>;
+function page() {
+  return <Rules />;
 }
