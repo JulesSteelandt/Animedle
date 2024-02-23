@@ -16,8 +16,8 @@ export default function Rules() {
           <h3 className='mb-2 font-Lemon text-xl'>Guess :</h3>
           <p className='font-Itim text-xl'>
             Le mode Guess consiste à deviner le titre d'un anime ou d'un manga à partir des informations fournis. Vous
-            avez 7 vies, chaque anime que vous rentrez vous donnera des indices sur l'anime que vous devez deviner. Si
-            vous perdez toutes vos vies, vous perdez la partie.
+            avez 7 vies, chaque anime que vous rentrez vous donnera des indices sur l'anime que vous devez deviner à
+            l'aide de son studio, ses dates... Si vous perdez toutes vos vies, vous perdez la partie.
           </p>
         </section>
       </div>
