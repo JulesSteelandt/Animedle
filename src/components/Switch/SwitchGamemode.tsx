@@ -1,35 +1,35 @@
-import {useState} from 'react';
+import {Switch} from '@mui/material';
 
 type Props = {
   anime: boolean;
+  setAnime: (isAnime: boolean) => void;
 };
 
-export default function SwitchGamemode({anime}: Props) {
-  const [isChecked, setIsChecked] = useState(false);
-
+export default function SwitchGamemode({anime, setAnime}: Props) {
   const handleToggle = () => {
-    setIsChecked(!isChecked);
+    setAnime(!anime);
   };
 
   return (
     <div className='flex items-center'>
-      <div className='relative'>
-        <input type='checkbox' id='toggle' checked={isChecked} onChange={handleToggle} className='sr-only' />
-        <div
-          className={`h-4 w-10 rounded-full bg-gray-400 shadow-inner transition duration-300 ease-in-out ${
-            isChecked ? 'bg-green-500' : ''
-          }`}
-        >
-          <div
-            className={`absolute inset-y-0 left-0 h-6 w-6 rounded-full bg-white shadow ${
-              isChecked ? 'translate-x-full transform' : ''
-            }`}
-          />
-        </div>
+      <Switch
+        checked={anime}
+        onChange={handleToggle}
+        sx={{
+          '& .MuiSwitch-track': {
+            backgroundColor: '#EAE8FF',
+          },
+          '& .MuiSwitch-thumb': {
+            backgroundColor: anime ? '#2D3142' : '#EAE8FF',
+          },
+          '&.Mui-checked .MuiSwitch-thumb': {
+            backgroundColor: anime ? '#2D3142' : '#EAE8FF',
+          },
+        }}
+      />
+      <div className='ml-2'>
+        <span className='font-Lemon text-4xl text-secondaryText'>{anime ? 'Manga' : 'Anime'}</span>
       </div>
-      <label htmlFor='toggle' className='ml-3'>
-        {anime ? 'Anime' : 'Manga'}
-      </label>
     </div>
   );
 }
