@@ -1,5 +1,6 @@
 import {Link} from '@tanstack/react-router';
 import {useState} from 'react';
+import SwitchGamemode from '../Switch/SwitchGamemode.tsx';
 
 type Props = {
   text: string;
@@ -14,10 +15,16 @@ export default function ButtonGamemode({text, link}: Props) {
   };
 
   return (
-    <div>
-      <Link>
-        <button>{text}</button>
+    <div className={'my-7 flex space-x-5'}>
+      <Link
+        className={
+          'bg-button shadow-button_sh flex h-16 w-64 items-center justify-center rounded-2xl text-5xl shadow-[0_0_25px_6px]'
+        }
+      >
+        <button className={'font-Lemon text-secondary'}>{text}</button>
       </Link>
+
+      <SwitchGamemode anime={anime} />
     </div>
   );
 }
