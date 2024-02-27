@@ -10,8 +10,8 @@ export default function Classic() {
         <ScoreMode text={'Streak'} score={0} />
         <ScoreMode text={'Max Streak'} score={0} />
       </div>
-      <div className={'flex flex-col'}>
-        <div className={'flex'}>
+      <div className={'flex flex-col items-center'}>
+        <div className={'flex items-end'}>
           <ImageClassic />
           <LiveCount life={3} />
         </div>
