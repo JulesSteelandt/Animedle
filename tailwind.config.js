@@ -15,6 +15,8 @@ export default {
         button_sh: '#B3ACFF',
         inputText: '#444961',
         shadowInner: '#5B5B5B',
+        winColor: '#7AFF58',
+        loseColor: '#D8011B',
       },
       fontFamily: {
         Lemon: ['Lemon', 'Regular'],
