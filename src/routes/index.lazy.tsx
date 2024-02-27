@@ -1,5 +1,5 @@
 import {createLazyFileRoute} from '@tanstack/react-router';
-import Index from '../Pages';
+import Index from '../Pages/Index';
 
 const page = () => {
   return <Index />;
