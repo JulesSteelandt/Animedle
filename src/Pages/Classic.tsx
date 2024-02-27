@@ -6,12 +6,12 @@ import LiveCount from '../components/Score/LiveCount.tsx';
 export default function Classic() {
   return (
     <div className={'h-[90vh] bg-main'}>
-      <div>
+      <div className={'p-3'}>
         <ScoreMode text={'Streak'} score={0} />
         <ScoreMode text={'Max Streak'} score={0} />
       </div>
       <div className={'flex flex-col items-center'}>
-        <div className={'flex items-end'}>
+        <div className={'flex pb-6'}>
           <ImageClassic />
           <LiveCount life={3} />
         </div>
