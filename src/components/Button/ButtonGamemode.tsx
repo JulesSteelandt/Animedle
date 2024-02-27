@@ -14,7 +14,6 @@ export default function ButtonGamemode({text, link}: Props) {
     setAnime(isAnime);
   };
 
-  console.log(anime);
 
   return (
     <div className={'my-7 flex space-x-5'}>

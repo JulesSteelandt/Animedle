@@ -1,10 +1,10 @@
 import {createLazyFileRoute} from '@tanstack/react-router';
-import Rules from '../Pages/Rules.tsx';
+import Classic from '../Pages/Classic.tsx';
 
 export const Route = createLazyFileRoute('/play/classic')({
   component: page,
 });
 
 function page() {
- return <Rules/>;
+ return <Classic/>;
 }
